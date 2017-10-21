@@ -54,8 +54,8 @@ class ChangeColor:
         print("w:%d,h:%d" % (w,h))
         print("r:%d-%d,g:%d-%d,b:%d-%d"
              % (self.red_s,self.red_e,
-                self.blue_s,self.blue_e,
-                self.green_s,self.green_e))
+                self.green_s,self.green_e,
+                self.blue_s,self.blue_e))
         for j in range(0,h):
             progressbar(j+1, h)
             for i in range(0,w):

@@ -25,7 +25,7 @@ def process(single_page):
 
 
 def get_pages(filename):
-    return PdfFileReader(file(filename, 'rb')).getNumPages()
+    return PdfFileReader(open(filename, 'rb')).getNumPages()
 
 
 class Pdf2img:
@@ -49,7 +49,7 @@ class Pdf2img:
         pool.map(process, page_list)
         pool.close()
         pool.join()
-        print 'Page Size:%s' % (pages)
+        print ('Page Size:%s' % (pages))
         print('<<<========= End')
 
 

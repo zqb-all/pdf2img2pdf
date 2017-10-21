@@ -100,6 +100,7 @@ class Convert2PDF:
                 real_filename = os.path.join(parent, filename)
                 # 取父文件夹名称为书名
                 parentDirName = real_filename.split('/')[-2]
+                print('parentDirName %s'%parentDirName)
 
                 if parentDirName in self.dirs.keys():
                     dirJsonData = self.dirs[parentDirName]
